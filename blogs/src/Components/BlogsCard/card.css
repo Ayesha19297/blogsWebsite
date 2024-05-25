@@ -1,0 +1,51 @@
+.card {
+  width: 350px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.card img {
+  width: 90%;
+  height: 50%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+.sub-title {
+  text-align: left;
+  font-weight: 700;
+}
+
+.card-meta {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card-meta img {
+  width: 15%;
+  height: 15%;
+  border-radius: 180%;
+  margin: 5px;
+}
+
+.card-description {
+  color: #333;
+  height: auto;
+  width: auto;
+}
