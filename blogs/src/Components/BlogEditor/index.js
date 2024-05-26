@@ -47,7 +47,7 @@ const BlogEditor = ({ onSubmit }) => {
 
   return (
     <div className="blog-editor">
-      <ReactQuill
+      <ReactQuill theme="snow"
         value={content}
         onChange={handleContentChange}
         modules={modules}
@@ -60,14 +60,3 @@ const BlogEditor = ({ onSubmit }) => {
 };
 
 export default BlogEditor;
-
-// import React, { useState } from "react";
-// import ReactQuill from "react-quill";
-// import "react-quill/dist/quill.snow.css";
-
-// function BlogEditor() {
-//   const [value, setValue] = useState("");
-
-//   return <ReactQuill theme="snow" value={value} onChange={setValue} />;
-// }
-// export default BlogEditor;

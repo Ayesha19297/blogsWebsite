@@ -14,9 +14,9 @@ const Navigation = () => {
   return (
     <div className="nav">
       {location.pathname === "/" ? (
-        <Link to="/create">Create your own blog</Link>
+        <Link className="link" to="/create">Create your own blog</Link>
       ) : (
-        <Link to="/">Recent posts</Link>
+        <Link className="link" to="/">Recent posts</Link>
       )}
     </div>
   );
@@ -26,10 +26,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <div className="nav">
-        <Link to="/">Recent posts</Link>
-        <Link to="/create">Create your own blog</Link>
-      </div> */}
         <Navigation />
         <Routes>
           <Route path="/" element={<BlogsData />} />

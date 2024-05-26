@@ -37,15 +37,20 @@
   }
 }
 .nav {
-  margin-bottom: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.nav a {
+.link {
   text-decoration: none;
-  color: #007bff;
+  color: orangered;
   margin-right: 10px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.link:hover {
+  text-decoration:underline;
+  
 }

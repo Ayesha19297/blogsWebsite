@@ -17,7 +17,7 @@ const BlogsData = () => {
 
   return (
     <>
-      <h2>Recent Posts</h2>
+      <h2 className="heading">Latest Posts . . .</h2>
       <div className="blog-container">
         {blogs.map((blog) => (
           <BlogsCard

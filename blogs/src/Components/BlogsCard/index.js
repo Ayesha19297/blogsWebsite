@@ -1,4 +1,3 @@
-// src/BlogCard.js
 import React from "react";
 import "./card.css";
 

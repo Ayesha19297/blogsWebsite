@@ -1,9 +1,15 @@
-
-
 .blog-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 20px;
+}
+.heading {
+  text-align: left;
+  margin-left: 105px;
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 30px;
 }

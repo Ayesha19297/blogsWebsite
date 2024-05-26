@@ -5,7 +5,9 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  margin: 15px;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgb(201, 201, 245) , rgb(245, 214, 245));
 }
 
 .card img {
@@ -21,7 +23,7 @@
 }
 
 .card-title {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 0 0 10px;
 }
 .sub-title {
