@@ -3,17 +3,15 @@ import React, { useEffect, useState } from "react";
 import BlogsCard from "../BlogsCard";
 import "./blogs.css";
 
-const BlogsData = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    fetch("blogsData.json")
-      .then((response) => response.json())
-      .then((data) => setBlogs(data))
-      .catch((error) => {
-        console.error("Error fetching blog data:", error);
-      });
-  }, []);
+const BlogsData = ({ blogs, setBlogs }) => {
+  // useEffect(() => {
+  //   fetch("blogsData.json")
+  //     .then((response) => response.json())
+  //     .then((data) => setBlogs(data))
+  //     .catch((error) => {
+  //       console.error("Error fetching blog data:", error);
+  //     });
+  // }, []);
 
   return (
     <>
