@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import React, { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const BlogEditor = ({ onSubmit }) => {
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState("");
 
   const handleContentChange = (value) => {
     setContent(value);
@@ -11,24 +11,38 @@ const BlogEditor = ({ onSubmit }) => {
 
   const handleSubmit = () => {
     onSubmit(content);
-    setContent('');
+    setContent("");
   };
 
   const modules = {
     toolbar: [
-      [{ 'header': '1'}, {'header': '2'}, { 'font': [] }],
-      [{ 'list': 'ordered'}, {'list': 'bullet'}, { 'indent': '-1'}, { 'indent': '+1' }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
-      ['link', 'image', 'video'],
-      ['clean']
+      [{ header: "1" }, { header: "2" }, { font: [] }],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      ["link", "image", "video"],
+      ["clean"],
     ],
   };
 
   const formats = [
-    'header', 'font',
-    'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
-    'link', 'image', 'video'
+    "header",
+    "font",
+    "bold",
+    "italic",
+    "underline",
+    "strike",
+    "blockquote",
+    "list",
+    "bullet",
+    "indent",
+    "link",
+    "image",
+    "video",
   ];
 
   return (
@@ -46,3 +60,14 @@ const BlogEditor = ({ onSubmit }) => {
 };
 
 export default BlogEditor;
+
+// import React, { useState } from "react";
+// import ReactQuill from "react-quill";
+// import "react-quill/dist/quill.snow.css";
+
+// function BlogEditor() {
+//   const [value, setValue] = useState("");
+
+//   return <ReactQuill theme="snow" value={value} onChange={setValue} />;
+// }
+// export default BlogEditor;
