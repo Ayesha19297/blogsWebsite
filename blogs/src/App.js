@@ -15,9 +15,13 @@ const Navigation = () => {
   return (
     <div className="nav">
       {location.pathname === "/" ? (
-        <Link className="link" to="/create">Create your own blog</Link>
+        <Link className="link" to="/create">
+          Create your own blog. <span>+</span> 
+        </Link>
       ) : (
-        <Link className="link" to="/">Recent posts</Link>
+        <Link className="link" to="/">
+          Recent posts
+        </Link>
       )}
     </div>
   );
