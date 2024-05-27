@@ -9,6 +9,7 @@ const BlogsData = ({ blogs }) => {
         {blogs.map((blog) => (
           <BlogsCard
             key={blog.id}
+            id={blog.id}
             category={blog.category}
             title={blog.title}
             body={blog.body}

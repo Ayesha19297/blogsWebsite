@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import BlogsData from "./Components/Blogs";
 import BlogEditor from "./Components/BlogEditor";
+import BlogsDetail from "./Components/BlogsDetail";
 import "./App.css";
 
 const Navigation = () => {
@@ -16,7 +17,7 @@ const Navigation = () => {
     <div className="nav">
       {location.pathname === "/" ? (
         <Link className="link" to="/create">
-          Create your own blog. <span>+</span> 
+          Create your own blog. <span>+</span>
         </Link>
       ) : (
         <Link className="link" to="/">
@@ -36,7 +37,7 @@ const App = () => {
     if (localData) {
       setBlogs(JSON.parse(localData));
     } else {
-      fetch("blogsData.json")
+      fetch("/blogsData.json")
         .then((response) => response.json())
         .then((data) => {
           setBlogs(data);
@@ -69,6 +70,7 @@ const App = () => {
               <BlogEditor onSubmit={handleNewPost} blogsLength={blogs.length} />
             }
           />
+          <Route path="/blog/:id" element={<BlogsDetail blogs={blogs} />} />
         </Routes>
       </div>
     </Router>

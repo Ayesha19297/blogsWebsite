@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./card.css";
 
 const BlogsCard = ({
+  id,
   title,
   body,
   image,
@@ -9,9 +12,16 @@ const BlogsCard = ({
   author,
   date,
   author_img,
+  description,
 }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/blog/${id}`);
+  };
   return (
-    <div className="card">
+    <div className="card" onClick={handleClick}>
+      {/* <Link to={`/blog/${id}`}></Link> */}
       <img src={image} alt={title} />
       <div className="card-content">
         <p className="sub-title"> {category} </p>
