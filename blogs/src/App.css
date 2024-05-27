@@ -11,12 +11,15 @@
   text-decoration: none;
 }
 
-.nav Link {
+.link {
   text-decoration: none;
-  color: #007bff;
+  color: orangered;
   margin-right: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
 }
 
-.nav Link:hover {
+.link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
