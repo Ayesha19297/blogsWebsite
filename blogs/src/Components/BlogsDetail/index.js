@@ -6,7 +6,7 @@ const BlogsDetail = ({ blogs }) => {
   const { id } = useParams();
   const blog = blogs.find((blog) => blog.id.toString() === id);
 
-  //console.log("blog details:",blog);
+  console.log("blog details:", blog);
 
   if (!blog) {
     return <div>Blog post not found</div>;
