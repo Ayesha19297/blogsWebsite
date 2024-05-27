@@ -1,18 +1,7 @@
-import React, { useEffect, useState } from "react";
-//import axios from "axios";
 import BlogsCard from "../BlogsCard";
 import "./blogs.css";
 
-const BlogsData = ({ blogs, setBlogs }) => {
-  // useEffect(() => {
-  //   fetch("blogsData.json")
-  //     .then((response) => response.json())
-  //     .then((data) => setBlogs(data))
-  //     .catch((error) => {
-  //       console.error("Error fetching blog data:", error);
-  //     });
-  // }, []);
-
+const BlogsData = ({ blogs }) => {
   return (
     <>
       <h2 className="heading">Latest Posts . . .</h2>

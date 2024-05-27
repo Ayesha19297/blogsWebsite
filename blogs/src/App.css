@@ -1,5 +1,4 @@
 .App {
-  /* max-width: 800px; */
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ddd;
@@ -9,14 +8,15 @@
 
 .nav {
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
-.nav a {
+.nav Link {
   text-decoration: none;
   color: #007bff;
   margin-right: 10px;
 }
 
-.nav a:hover {
+.nav Link:hover {
   text-decoration: underline;
 }

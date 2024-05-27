@@ -16,7 +16,7 @@ const BlogsCard = ({
       <div className="card-content">
         <p className="sub-title"> {category} </p>
         <h2 className="card-title">{title}</h2>
-        <p className="card-description">{body}</p>
+        {/* <p className="card-description">{body}</p> */}
         <div className="card-meta">
           <img src={author_img} alt={author} />
           <p>{author}</p>
