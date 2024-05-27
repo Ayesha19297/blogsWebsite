@@ -40,6 +40,7 @@ const App = () => {
       fetch("/blogsData.json")
         .then((response) => response.json())
         .then((data) => {
+          console.log(data);
           setBlogs(data);
           localStorage.setItem("blogPosts", JSON.stringify(data));
         })
